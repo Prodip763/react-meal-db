@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import NotFound from './Components/NotFound/NotFound';
 import Restaurant from './Components/Restaurant/Restaurant';
+import MealDetail from './Components/MealDetail/MealDetail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/restaurant' element={<Restaurant></Restaurant>}></Route>
+        <Route path="/meal/:mealDetail" element={<MealDetail></MealDetail>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
